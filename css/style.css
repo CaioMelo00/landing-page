@@ -48,10 +48,7 @@ nav > ul {
 
 nav > ul > li {
     list-style-type: none;
-<<<<<<< HEAD
     font-size: 20px;
-=======
->>>>>>> 93e9f613d465f298601479a38508c591fe1fc8ac
 }
 
 nav > ul > li > a {
@@ -76,11 +73,7 @@ section img {
 }
 
 footer {
-<<<<<<< HEAD
     padding: 20px 80px;
-=======
-    padding: 40px;
->>>>>>> 93e9f613d465f298601479a38508c591fe1fc8ac
 }
 
 .answer, .button {
@@ -89,13 +82,10 @@ footer {
     min-width: 23%;
 }
 
-<<<<<<< HEAD
 .button {
     min-width: 23.5%;
 }
 
-=======
->>>>>>> 93e9f613d465f298601479a38508c591fe1fc8ac
 .button:hover {
     cursor: pointer;
     color: #D9D9D9;
