@@ -1,16 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Landing page do desenvolvedor Caio Vínicius. Aqui você poderá encontrar informações do currículo e do portfólio.">
+        <meta name="keywords" content="site, pessoal, landing, page, portfolio, curriculo, Caio, Vínicius">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <title>Site pessoal de Caio</title>
     </head>
     <body>
         <header>
-            <img src="minha-foto.jpg" alt="minha foto">
+            <img src="assets/minha-foto.jpg" alt="Minha foto">
             <h1>Caio<br>
                 Vinícius<br> 
                 de<br> 
@@ -19,40 +26,54 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#curriculo">Currículo</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li title="Currículo"><a href="#curriculum">Currículo</a></li>
+                <li title="Portfólio"><a href="#portfolio">Portfólio</a></li>
+                <li title="Contato"><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-        <section id="curriculo">
-            <h2>Sobre mim</h2>
-            <p>Atualmente estudante de Ciência da Computação e de desenvolvimento de software, sou um profissional reconhecido por pela rápida adaptação, organização, cooperação e inteligência. Fã de filmes japoneses e de músicas que ninguém ouve.</p>
-            <h2>Acadêmico</h2>
-            <p>
-                <ul>
-                    <li><b>(2022 - 2025)</b> Ciência da Computação - UNIFAVIP</li>
-                </ul>
-            </p>
-            <h2>Profissional</h2>
-                <ul>
-                    <li><b>(Mar/2018 - Mar/2019)</b> Vendedor - VIP Informática</li>
-                    <li><b>(Nov/2019 - Jan/2020)</b> Operador Comercial - Americanas</li>
-                    <li><b>(Mar/2020 - Nov/2021)</b> Vendedor - BIG Bompreço</li>
-                    <li><b>(Out/2022 - Dez/2022)</b> Operador de Telemarketing - Provider</li>
-                </ul>
-        </section>
-        <section id="portfolio">
-            <h2>Portfólio</h2>
-            <img src="tom.jpg" class="unknown">
-        </section>
-        <footer id="contato">
-            <h2 class="contato">Contato</h2><br/>
+        <main>
+            <section id="curriculum">
+                <h2>Sobre mim</h2>
+                <p>Atualmente estudante de Ciência da Computação e de desenvolvimento de software, sou um profissional reconhecido por pela rápida adaptação, organização, cooperação e inteligência. Fã de filmes japoneses e de músicas que ninguém ouve.</p>
+                <h2>Acadêmico</h2>
+                    <ul class="curriculum">
+                        <li><b>(2022 - 2025)</b> Ciência da Computação - UNIFAVIP</li>
+                    </ul>
+                <h2>Profissional</h2>
+                    <ul class="curriculum">
+                        <li><b>(Mar/2018 - Mar/2019)</b> Vendedor - VIP Informática</li>
+                        <li><b>(Nov/2019 - Jan/2020)</b> Operador Comercial - Americanas</li>
+                        <li><b>(Mar/2020 - Nov/2021)</b> Vendedor - BIG Bompreço</li>
+                        <li><b>(Out/2022 - Dez/2022)</b> Operador de Telemarketing - Provider</li>
+                    </ul>
+            </section>
+            <section class="portfolio">
+                <h2>Portfólio</h2>
+                <a href="https://github.com/CaioMelo00/projeto-formulario" alt="Projeto Formulário Gamer" target="_blank">
+                    <div>
+                        <img src="assets/card1.png" alt="Formulário Gamer">
+                        <p>Formulário Gamer</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer id="contact">
+            <h2>Contato</h2><br>
+            <form class="form" method="post" action="">
+                <fieldset>
+                    <input class="answer" name="name" type="text" placeholder="Nome" required>
+                    <input class="answer" name="email" type="email" placeholder="Email" required>
+                    <input class="answer" name="subject" type="text" placeholder="Assunto" required>
+                    <textarea class="answer" name="description" placeholder="Descrição" cols="21" rows="5"></textarea>
+                    <input class="button" type="submit" value="Enviar">
+                </fieldset>
+            </form>
             <address>
                 81 99472-9119<br/>
-                <a href="linkedin.com/in/caio-vinícius-a4ab74180">linkedin.com/in/caio-vinícius-a4ab74180</a><br/>
-                <a href="github.com/CaioMelo00">github.com/CaioMelo00</a>
+                <a href="linkedin.com/in/caio-vinícius-a4ab74180">LinkedIn</a><br/>
+                <a href="github.com/CaioMelo00">GitHub</a>
             </address>
-            <p>Desenvolvido por Caio Vinícius</p>
+            <p class="signature">Desenvolvido por Caio Vinícius</p>
         </footer>
     </body>
 </html>
